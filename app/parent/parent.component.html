@@ -1,0 +1,11 @@
+<div style="border: 2px solid green;padding:20; margin: 30 ">
+
+  <input type="button" 
+  value="Generate Random Number"
+   (click) ="generateRandomNo()">
+
+<app-child [title]="result" (notify)="ListenToNotify($event)"></app-child>
+
+{{NotifiedValue}}
+
+</div>
